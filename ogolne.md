@@ -1,9 +1,11 @@
 ## Raid
-rozmiar RAID 10 liczy się tak:
-rozmiar_najmniejszego * liczba_dysków / 2
+- najmniej bezpieczny jest RAID 0
+- rozmiar RAID 10 liczy się tak:
+
+$$\frac{rozmiarNajmniejszego * liczbaDysków}{{2}}$$
 
 rozmiar RAID 5:
-rozmiar_najmnmiejszego * (liczba_dysków - 1) 
+$$rozmiarNajmniejszego * (liczbaDysków - 1)$$
 
 ## Autoryzacja autentykacja
 1. autentykacja to sprawdzenie czy użytkownik jest tym za kogo się podaje np login i hasło
