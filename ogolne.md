@@ -171,6 +171,8 @@ i tu jest problem bo nie wiadomo
 
 kiedyś chat mi powiedział, że DFS – Depth-First Search jest używany do szukania wyjścia z labiryntu więc może to
 
+
+Możliwe że było o najkrótszą dorgę to wtedy Dijsktra jest
 ## Łazik marsjański
 VXWorks
 
