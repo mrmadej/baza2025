@@ -430,7 +430,13 @@ http://student.krk.pl/026-Ciosek-Grybow/rodzaje.html
 - spójny - każdy wierzchołek jest jakkolwiek połączony, nie ma węzła który jest z boku
 - niespójny - jak nie jest spójny
 - pełny - każdy z każdym
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
 
+![alt text](image-6.png)
 ### graf z literkami
 a->b->d-> 
 
@@ -1166,3 +1172,102 @@ Odpowiedź: może być wykorzystywany do silników bazodanowych (nie wiem jakie 
 
 ## Jednostka cewki induckyjnej
 henr
+
+## Jaki to graf
+```
+0100
+1001
+0100
+0100
+```
+Jest to graf spójny nieskierowany
+
+- graf jest nieskierowany jeśli macierz sąsiedstwa jest symetryczna. Czyli w tym przypadku np a<sub>01</sub> = 1 oraz a<sub>10</sub> = 1
+
+- skierowany jest wtedy kiedy nie jest symetryczna macierz sąsiedstwa
+- graf jest cykliczny jeśli można przechodząc przez niego wrócić do punktu startowego
+
+## inżynieria danych co powoduje za duzo danych
+W inżynierii danych zbyt duża ilość danych może powodować wiele problemów, takich jak:
+- Wydajność systemu – Przetwarzanie ogromnych ilości danych wymaga większej mocy obliczeniowej, pamięci oraz czasu, co może spowalniać systemy.
+- Problemy z przechowywaniem – Większa ilość danych wymaga więcej miejsca na dyskach lub w chmurze, co zwiększa koszty.
+- Trudności w analizie – Nadmiar informacji może utrudniać znalezienie istotnych wzorców i zależności (tzw. „szum informacyjny”).
+- Jakość danych – Zbyt duża ilość danych może oznaczać więcej błędnych, niekompletnych lub niespójnych rekordów.
+- Czas przetwarzania – Długie zapytania do baz danych, dłuższy czas uczenia modeli w uczeniu maszynowym.
+- Problemy z transmisją – Wysyłanie dużych ilości danych przez sieć może prowadzić do przeciążeń i większych opóźnień.
+
+## pochodna
+Obliczamy pochodną funkcji:  
+
+$$
+f(x) = x^3 \cdot \sin x
+$$
+
+Używamy **reguły iloczynu**, czyli:  
+
+$$
+(uv)' = u'v + uv'
+$$
+
+Gdzie:  
+- u = x<sup>3</sup>, więc u' = 3x^<sup>2</sup>  
+- v = sin x, więc v' = cos x  
+
+Podstawiamy do wzoru:
+$$
+f'(x) = (3x^2 \cdot \sin x) + (x^3 \cdot \cos x)
+$$
+
+Ostatecznie:
+
+$$
+f'(x) = 3x^2 \sin x + x^3 \cos x
+$$
+
+## triada CIA w bezpieczeństwie informacji
+
+- `Confidentiality` (Poufność) – zapewnienie, że dane są dostępne tylko dla uprawnionych użytkowników i nie są ujawniane osobom nieupoważnionym.
+
+    Przykłady: szyfrowanie danych, kontrola dostępu, VPN, uwierzytelnianie użytkowników.
+
+- `Integrity` (Integralność) – zapewnienie, że dane nie zostały zmienione, uszkodzone lub zmanipulowane przez osoby nieuprawnione.
+
+    Przykłady: sumy kontrolne (hashing), podpisy cyfrowe, kontrola wersji plików.
+
+- `Availability` (Dostępność) – zapewnienie, że dane i systemy są dostępne wtedy, kiedy są potrzebne, bez zbędnych opóźnień czy awarii.
+
+## Trójkąt zarządzania projektami, które wpływają na jakość projektu
+![alt text](inline-project-management-project-management-triangle-1-2x.webp)
+w trójkącie:
+- zakres
+- koszt
+- czas
+
+wszystkie mają wpływ na jakość projektu
+
+## Czy metoda trapezów jest wyższego rzędu niż simpsona
+**NIE**
+- metoda trapezów O(h<sup>2</sup>)
+- metoda simpsona O(h<sup>4</sup>)
+
+## Jakiego stopnia jest równanbie różniczkowe osclatora harmonicznego
+2 stopnia
+
+## Co ma na celu Test Turinga?
+Ustalenie, czy maszyna może wykazać ludzką inteligencję
+
+## Wymienione były 4 odp i pytanie do czego stosuje się sztuczną inteligencje 
+Uczenie maszynowe
+
+## NLP języki
+- `Python` – najpopularniejszy język do NLP, dzięki bibliotekom takim jak NLTK, spaCy, Transformers (Hugging Face) oraz TensorFlow i PyTorch do uczenia modeli językowych.
+- `R` – używany głównie w analizie statystycznej tekstu i eksploracyjnej analizie danych językowych.
+- `Java` – używany w narzędziach takich jak Apache OpenNLP oraz Stanford NLP.
+- `Julia` – stosowana w NLP, ale rzadziej niż Python.
+- `C++` – wykorzystywany w optymalizacji i tworzeniu wydajnych modeli NLP, np. w bibliotekach takich jak fastText.
+
+## Jak nazywamy element B w tym grafie
+![alt text](image-7.png)
+- W grafach element B (i C) to wierzchołek zawieszony/wiszący/liść
+- A to wierzchołek wewnętrzny
+- D to wierzchołek izolowany
