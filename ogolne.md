@@ -646,22 +646,31 @@ Ma być podobno coś z `modify`
 ## Rozwiąż cosx
 
 Równanie trygonometryczne:
+
 $$
 \cos x = 0
 $$
+
 ma rozwiązania w postaci:  
+
 $$
 x = \frac{\pi}{2} + k\pi, \quad k \in \mathbb{Z}
 $$
-czyli:  
+
+czyli: 
+
 $$
 x = \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \dots
 $$
-w radianach oraz:  
+
+w radianach oraz: 
+
 $$
 x = 90^\circ + k \cdot 180^\circ, \quad k \in \mathbb{Z}
 $$
+
 w stopniach, co oznacza:  
+
 $$
 x = 90^\circ, 270^\circ, 450^\circ, \dots
 $$
