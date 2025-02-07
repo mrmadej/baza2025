@@ -1271,3 +1271,209 @@ Uczenie maszynowe
 - W grafach element B (i C) to wierzchołek zawieszony/wiszący/liść
 - A to wierzchołek wewnętrzny
 - D to wierzchołek izolowany
+
+## Jakiś rzut z dachu to różniczkowe 2 stopnia
+
+## Normalizacja w bazach danych – 1NF (Pierwsza Forma Normalna, NF1)
+Relacja jest w pierwszej formie normalnej (1NF), jeśli każda kolumna przechowuje tylko pojedynczą wartość, czyli nie zawiera zgrupowanych ani powtarzających się wartości.
+
+## filtry górno i dolnoprzepustowe
+
+### 1. **Filtry górnoprzepustowe (High-pass filters)**
+
+**Przykład zastosowań:**
+- Wykrywanie krawędzi (np. za pomocą filtra Sobela, Laplacjana).
+- Podkreślenie szczegółów w obrazie.
+  
+**Przykładowy filtr:**
+- Filtr **Sobel** (używany do detekcji krawędzi w obrazie) jest filtrem górnoprzepustowym.
+
+### 2. **Filtry dolnoprzepustowe (Low-pass filters)**
+
+**Przykład zastosowań:**
+- Usuwanie szumów.
+- Rozmycie obrazu (np. przy użyciu filtra Gaussa).
+  
+**Przykładowy filtr:**
+- Filtr **Gaussa** (stosowany w rozmyciu obrazu) jest filtrem dolnoprzepustowym.
+
+---
+
+### **Podsumowanie różnic:**
+
+| **Typ filtru**        | **Przepuszczane częstotliwości**      | **Efekt na obrazie**                            |
+|-----------------------|--------------------------------------|------------------------------------------------|
+| **Górnoprzepustowy**   | Wysokie częstotliwości (szczegóły, krawędzie) | Wydobywa krawędzie, szczegóły, usuwanie tła     |
+| **Dolnoprzepustowy**   | Niskie częstotliwości (w tle, gładkie zmiany) | Wygładza obraz, usuwa szumy, zmniejsza szczegóły|
+
+## Pytanie z programownaia c++ gdzie była zmienna referencyjna i wskaźniokowa i trzebabyło je dodać a z racji ze się zmieniają podczas działania programu to po wyjściu z funkcji dalej dodawało się te większe wartości
+
+mogło to wyglądać tak:
+```cpp
+#include <iostream>
+
+void modifyValues(int& refVar, int* ptrVar) {
+    refVar += 5;  // Zmiana wartości zmiennej referencyjnej
+    *ptrVar += 10; // Zmiana wartości zmiennej wskazywanej przez wskaźnik
+}
+
+int main() {
+    int a = 5;
+    int b = 7;
+
+    std::cout << "Przed funkcją: a = " << a << ", b = " << b << std::endl;
+
+    modifyValues(a, &b);  // Przekazanie zmiennej a przez referencję, b przez wskaźnik
+
+    std::cout << "Po funkcji: a = " << a << ", b = " << b << std::endl;
+
+    return 0;
+}
+
+```
+wynik:
+```bash
+Przed funkcją: a = 5, b = 7
+Po funkcji: a = 10, b = 17
+```
+## Jest słownik jakiś tam i pytanie o przekonwertowanie na listę PYTHON chyba
+
+### 1. **Lista kluczy (keys)**
+Jeśli chcesz uzyskać listę kluczy słownika:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+keys_list = list(my_dict.keys())
+print(keys_list)
+```
+**Wynik**:
+```
+['a', 'b', 'c']
+```
+
+### 2. **Lista wartości (values)**
+Jeśli chcesz uzyskać listę wartości słownika:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+values_list = list(my_dict.values())
+print(values_list)
+```
+**Wynik**:
+```
+[1, 2, 3]
+```
+
+### 3. **Lista par (klucz, wartość) - items**
+Jeśli chcesz uzyskać listę krotek (par klucz-wartość):
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+items_list = list(my_dict.items())
+print(items_list)
+```
+**Wynik**:
+```
+[('a', 1), ('b', 2), ('c', 3)]
+```
+
+### 4. **Lista tylko wartości (flattened)**
+Jeśli chcesz uzyskać jedną listę, która zawiera tylko wartości, bez par klucz-wartość:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+flattened_list = [value for value in my_dict.values()]
+print(flattened_list)
+```
+**Wynik**:
+```
+[1, 2, 3]
+```
+
+### 5. **Lista tylko kluczy (flattened)**
+Jeśli chcesz uzyskać jedną listę, która zawiera tylko klucze, bez par klucz-wartość:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+flattened_keys_list = [key for key in my_dict.keys()]
+print(flattened_keys_list)
+```
+**Wynik**:
+```
+['a', 'b', 'c']
+```
+
+## Tworzenie wirtualnego serwera i bezpieczeństwo
+Odp zamiana portu 22
+
+##  plik w .htaaccess czemu nie działa gdy jakiś user se w nim zmiany zronbi
+Administrator ograniczył działanie .htaccess - coś w tym stylu
+
+## router ma kilka dróg i określić którym pójdą pakiety (nie określone czy rip ospf czy statycznyt itp.)  
+- Pierwszeństwo mają trasy statyczne, ponieważ mają najniższą administracyjną odległość (AD = 1).
+- Jeśli nie ma tras statycznych, router wybierze trasę z najniższą administracyjną odległością.
+- Następnie router wybiera trasę z najmniejszą metryką (np. najmniejsza liczba przeskoków w RIP lub najmniejszy koszt w OSPF).
+
+## Jakiej komendy nie możemy użyć na zapełnionym stosie
+`push`, bo jak jest przepełniony to już więcej nie dodamy
+
+## Obiekty hashowalne
+Nie hashowalne są obiekty mutowalne (listy, dict, set, bytearray)
+
+## Po ilu klasach można dziedziczyć w Javie
+Po jednej
+
+## Rożnice miedzy krotkami a listami w python
+Listy są mutowane, krotki nie
+
+## Java bazy danych
+JDBC/OBDC
+
+## Program współbieżny
+Program współbieżny jest wykonywany przez cztery procesy, z których każdy wykonuje instrukcje p1... p9 zapisane w pseudokodzie:
+Program wspóbieny:
+```
+semafor s <- 1
+semafor b <- 0
+integer m <- ?
+p1: wait(s)
+p2: m <- m-1
+p3: if (m<0)
+p4: signal(b)
+p5: else
+p6: signal(s)
+p7: wait(b)
+p8: signal(b)
+p9: exit
+```
+
+odpowiedź: `m = 3`
+
+## Dwa podstawowe sposoby rozmieszczania cyfrowych elementów obrazu to
+Siatka heksagonalna i siatka kwadratowa.
+
+## Testy regresyjne
+### obejmują:
+- Sprawdzanie stabilności modelu
+- Porównanie wyników
+- Monitorowanie jakości danych
+### Przykłady testów regresyjnych:
+
+- Testowanie algorytmów ML
+- Testowanie przepływów danych:
+- Testowanie wersji oprogramowania
+
+### Korzyści z testów regresyjnych:
+
+- Zwiększenie niezawodności
+- Poprawa jakości danych
+- Oszczędność czasu i zasobów
+
+## OSPF2
+W kontekście protokołu OSPF (Open Shortest Path First) liczba "2" odnosi się do `wersji` protokołu, czyli OSPFv2.
+
+## Jaka jest szansa przy dwukrotnym rzucie sześcienną kostką na to, że suma liczb będzie podzielna przez 3, albo iloczyn tych liczb będzie liczbą pierwszą
+
+$$\frac{7}{18}$$
+
+ogólnie zlicza się wszystkie przypadki podzelne przez 3 oraz odzielnie przypadki z liczbą pierwszą (1 nie jest liczbą pierwszą), sumuje się i odejmuje powtórzenia, to dzielisz przez wszystkie możliwe przypadki czyli 6*6=36
