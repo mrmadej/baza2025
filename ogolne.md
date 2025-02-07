@@ -1083,6 +1083,7 @@ coś na L, chyba LU ale nie jestem pewny
 - jeszcze jakieś dwa
 
 ktoś napisał Poprawne: fscanf() można użyć do wczytywania danych z pliku 
+### Ma być w teście `fscanf` bo jednak przy fclose było, że otwiera plik
 
 ## Co to IDE
 IDE (Integrated Development Environment) to Zintegrowane Środowisko Programistyczne
@@ -1191,12 +1192,12 @@ Jest to graf spójny nieskierowany
 
 ## inżynieria danych co powoduje za duzo danych
 W inżynierii danych zbyt duża ilość danych może powodować wiele problemów, takich jak:
-- Wydajność systemu – Przetwarzanie ogromnych ilości danych wymaga większej mocy obliczeniowej, pamięci oraz czasu, co może spowalniać systemy.
-- Problemy z przechowywaniem – Większa ilość danych wymaga więcej miejsca na dyskach lub w chmurze, co zwiększa koszty.
-- Trudności w analizie – Nadmiar informacji może utrudniać znalezienie istotnych wzorców i zależności (tzw. „szum informacyjny”).
-- Jakość danych – Zbyt duża ilość danych może oznaczać więcej błędnych, niekompletnych lub niespójnych rekordów.
-- Czas przetwarzania – Długie zapytania do baz danych, dłuższy czas uczenia modeli w uczeniu maszynowym.
-- Problemy z transmisją – Wysyłanie dużych ilości danych przez sieć może prowadzić do przeciążeń i większych opóźnień.
+- `Wydajność systemu` – Przetwarzanie ogromnych ilości danych wymaga większej mocy obliczeniowej, pamięci oraz czasu, co może spowalniać systemy.
+- `Problemy z przechowywaniem` – Większa ilość danych wymaga więcej miejsca na dyskach lub w chmurze, co zwiększa koszty.
+- `Trudności w analizie` – Nadmiar informacji może utrudniać znalezienie istotnych wzorców i zależności (tzw. „szum informacyjny”).
+- `Jakość danych` – Zbyt duża ilość danych może oznaczać więcej błędnych, niekompletnych lub niespójnych rekordów.
+- `Czas przetwarzania` – Długie zapytania do baz danych, dłuższy czas uczenia modeli w uczeniu maszynowym.
+- `Problemy z transmisją` – Wysyłanie dużych ilości danych przez sieć może prowadzić do przeciążeń i większych opóźnień.
 
 ## pochodna
 Obliczamy pochodną funkcji:  
@@ -1507,3 +1508,109 @@ bijekcja
 
 ## Liczenie z binarnego na ósemkowy i 16
 jeśli na ósemkowy to dzielisz na fragmenty po 3, a jeśli szesnastkowy to na 4
+
+## które to liczba wymierna 
+ogólnie liczba wymierna to liczba która może być zapisana jako ułamek
+
+była odpowiedź z potęgami (chyba były ułamkowe też. Na pewno nie odpowiedź z logarytmami)
+
+## Całka
+Aby obliczyć całkę z funkcji \( f(x) = x^3 + e^x \), należy obliczyć całki z obu składników osobno:
+
+$$
+\int (x^3 + e^x) \, dx = \int x^3 \, dx + \int e^x \, dx
+$$
+
+1. Całka z  x<sup>3</sup> :
+$$
+\int x^3 \, dx = \frac{x^4}{4}
+$$
+
+2. Całka z e<sup>x</sup>:
+$$
+\int e^x \, dx = e^x
+$$
+
+Zatem całkowita całka to:
+
+$$
+\int (x^3 + e^x) \, dx = \frac{x^4}{4} + e^x + C
+$$
+
+gdzie C to stała całkowania.
+
+## Drzewa decyzyjne las losowy
+- `Drzewa decyzyjne` to modele klasyfikacyjne/regresyjne, które podejmują decyzje na podstawie warunków logicznych. Każdy węzeł to warunek, a każde przejście to decyzja.
+- `Las losowy` to zbiór wielu drzew decyzyjnych trenowanych na różnych podzbiorach danych i cechach. Końcowa decyzja to średnia wyników (dla regresji) lub głosowanie większościowe (dla klasyfikacji).
+
+## Polecenie do nadawania uprawenien w BD
+```sql
+GRANT (jakie uprawnienia) ON (na który element bazy, może być cała) TO (dla kogo)
+
+GRANT UPDATE ON student TO debil@localhost
+
+```
+## Ustawić formatowanie w css dla p będących w div
+jeśli bezpośrednio w div to `div > p`, jeśli ogólnie w div to `div p` 
+
+## Prawo Ohma służy do omówienia relacji pomiędzy
+`Odpowiedź: A. Napięciem, natężeniem, rezystancją `
+
+Prawo Ohma opisuje zależność pomiędzy **napięciem (V)**, **natężeniem prądu (I)** i **rezystancją (R)** w obwodzie elektrycznym. Zapis matematyczny prawa Ohma to:
+
+$$
+V = I \cdot R
+$$
+
+gdzie:
+- \( V \) – napięcie w woltach (V),
+- \( I \) – natężenie prądu w amperach (A),
+- \( R \) – rezystancja w omach (Ω).
+
+Prawo Ohma mówi, że napięcie w obwodzie jest równe iloczynowi natężenia prądu i rezystancji.
+
+## 0010100011101 na ósemkowe
+
+```
+0|010|100|011|101
+0| 2 | 4 | 3 | 5
+```
+0010100011101<sub>2</sub> = 2435<sub>8</sub>
+
+## Wynik programu C
+```C
+int x = 0; 
+for ( x = 4; x >= 0; x--) 
+--x;
+```
+
+Pętla wykona się 3 razy, x ma na końcu wartość `-2`
+
+## Python kod co się wyświetli chyba
+
+```py
+def f(x):
+    if (x < 5) 
+        f(x + 2)
+    
+    print(x)
+    
+    if (x < 8)
+        f(6)
+    
+    print(x)
+
+f(3)
+```
+
+5, 6 w nieskończoność
+
+tu jest nieskończona rekurencja
+
+## generowanie liczb podniesionych do 2 z zakresu 1-5 (python)
+```py
+[x**2 for x in range(1, 6)]
+```
+
+## uczenie maszynowe nie obejmuje: a)przekształcania obrazów, b)streszczania tekstów, c)tłumaczenia języków czy d)coś tam i to bylo to coś tam xd
+
