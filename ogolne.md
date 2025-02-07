@@ -175,6 +175,8 @@ kiedyś chat mi powiedział, że DFS – Depth-First Search jest używany do szu
 
 
 Możliwe że było o najkrótszą dorgę to wtedy Dijsktra jest
+
+### W bazie chyba jest BFS (wszerz)
 ## Łazik marsjański
 VXWorks
 
@@ -240,7 +242,7 @@ Jednak to rozwiązanie także nie jest w zakresie \( x > 0 \), więc nie jest ak
 Nie ma rozwiązania dla równania \( f(x) = 1 \) w podanym układzie równań. Funkcja \( f(x) \) nie przyjmuje wartości 1 w żadnym punkcie.
 
 ## Tworzenie partycji 30tb, 5tb i coś jeszcze
-można fdisk, LVM
+GPT
 
 ## Linux co robi -r w komendzie rm
 usunie rekursywnie czyli katalog wraz z podkatalogami
