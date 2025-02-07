@@ -1533,11 +1533,13 @@ $$
 $$
 
 1. Całka z  x<sup>3</sup> :
+
 $$
 \int x^3 \, dx = \frac{x^4}{4}
 $$
 
 2. Całka z e<sup>x</sup>:
+
 $$
 \int e^x \, dx = e^x
 $$
