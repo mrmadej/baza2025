@@ -607,7 +607,8 @@ wynik:
 elementy są poównywane jak słowa, czyli od pierwszego elementu, jak jest taki sam to kolejny
 
 ## Lokalizowanie robota w ciemnym pomieszczenmiu
-LiDAR (Light Detection and Ranging) - Laser tworzy mapę 3D
+- LiDAR (Light Detection and Ranging) - Laser tworzy mapę 3D
+- sensor rgb-d
 
 ## Jakiego polecenia trzeba użyć w autocadzie żeby zrobić lustrzane odbicie
 MIRROR
@@ -634,10 +635,11 @@ Jaka była poprawna odpowiedź?
 - DFS prawdopodobnie nie był poprawną odpowiedzią.
 
 ## co trzeba kliknac zeby moc skorzystac z opcji modyfikacji obiektu(przycinanie,wydlużanie) w autocad
+Ma być podobno coś z `modify`
+
 - utnij; skrót: `TR`
 - wydłuż; skrót: `EX`
 
-mogą być oba chyba
 
 ## Rozwiąż cosx
 
@@ -1477,3 +1479,31 @@ W kontekście protokołu OSPF (Open Shortest Path First) liczba "2" odnosi się 
 $$\frac{7}{18}$$
 
 ogólnie zlicza się wszystkie przypadki podzelne przez 3 oraz odzielnie przypadki z liczbą pierwszą (1 nie jest liczbą pierwszą), sumuje się i odejmuje powtórzenia, to dzielisz przez wszystkie możliwe przypadki czyli 6*6=36
+
+## Złożonośc obliczeniowa `n`, chyba `O(n)`
+## Parametr ORDER BY służy do : `Porządkowania rekordów`
+
+## przy pomocy jakiego słowa wywala wyjątek Python
+- `raise` - rzuca wyjątek
+- `try` - początek bloku do łapania wyjątków
+- `except` - łapie wyjątek
+- `finally` - zawsze się wyjonuje 
+
+## Co jest na wykresie
+![alt text](image-8.png)
+
+`ścieżka krytyczna`
+
+## ACID
+- `Atomicity` (Atomowość): Gwarantuje, że transakcja jest wykonywana w całości lub wcale
+- `Consistency` (Spójność): Zapewnia, że transakcje prowadzą bazę danych od jednego poprawnego stanu do innego poprawnego stanu, zgodnego z wszystkimi regułami i ograniczeniami bazy danych (np. integralność danych, ograniczenia kluczy).
+- `Isolation` (Izolacja): Gwarantuje, że transakcje są wykonywane w taki sposób, że zmiany w jednej transakcji nie będą widoczne dla innych transakcji, dopóki pierwsza nie zakończy się (commit).
+- `Durability` (Trwałość): Gwarantuje, że po zatwierdzeniu transakcji (commit) zmiany wprowadzone do bazy danych są trwałe, nawet w przypadku awarii systemu (np. utraty zasilania).
+
+## czym jest x<sup>3</sup>
+bijekcja
+
+## z Sieci były podane jakieś 3 adresy ip z jakiegoś programu ale chuj wie jakiego i trzeba było napisać czy to jest Ripv1 , ripv2 , ospf czy coś jeszcze - /były dwa adresy, i tam poprawna odpowiedź to RIPv2/
+
+## Liczenie z binarnego na ósemkowy i 16
+jeśli na ósemkowy to dzielisz na fragmenty po 3, a jeśli szesnastkowy to na 4
