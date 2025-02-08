@@ -1627,3 +1627,118 @@ tu jest nieskończona rekurencja
 
 ## uczenie maszynowe nie obejmuje: a)przekształcania obrazów, b)streszczania tekstów, c)tłumaczenia języków czy d)coś tam i to bylo to coś tam xd
 
+## Jaki error wyskoczy, gdy program nie znajdzie danego pliku
+Odpowiedź zależy od języka programowania, ale najczęściej:
+
+- W `Pythonie`: Gdy program nie znajdzie pliku, zostanie zgłoszony wyjątek FileNotFoundError.
+- W `Javie`: Jeśli plik nie zostanie znaleziony, zostanie rzucony wyjątek FileNotFoundException.
+- W `C/C++`: Funkcja otwierająca plik (np. fopen) zwróci wskaźnik NULL, a globalna zmienna errno zostanie ustawiona na ENOENT („No such file or directory”).
+
+##  Czym jest metaprogramowanie w Python
+Metaprogramowanie w Pythonie to technika, która pozwala na manipulowanie strukturą programu w czasie jego wykonywania. Innymi słowy, jest to pisanie programu, który potrafi generować, modyfikować lub analizować kod w czasie jego działania.
+
+## Co robi metoda `__dict__`?
+Metoda `__dict__` w Pythonie jest używana do uzyskiwania dostępu do atrybutów obiektu lub klasy w postaci słownika. Działa ona dla instancji obiektów, jak również dla samych klas, i zwraca słownik, który zawiera pary klucz-wartość, gdzie klucze to nazwy atrybutów (lub metod) obiektu lub klasy, a wartości to przypisane do nich obiekty.
+
+## Coś z Socket
+
+###  Tworząc aplikację serwerową w języku Java, oczekujemy na nowe połączenia. Wskaż za pomocą jakiej metody przyjmowane są nowe połączenia  
+```Java
+serverSocket.accept()
+```
+
+###  Wskaż za pomocą jakiej klasy w języku Java można stworzyć gniazdo do nawiązania połączenia klienta serwer?
+```Java
+Socket()
+```
+
+## Komenda do tworzenia zip na linuxie
+Jednak nie ZIP. Najdłuższa odp 
+
+(Może tar?)
+
+## Wykres liniowy w Pandas- jaka metoda?
+`plot`
+
+## W realacji wiele do wielu
+Trzecia tabela zawiera klucze podstawowe z dwóch tabel powiązanych relacją
+
+## Przekonwertować na binarne U1 w formacie (4,4)
+Np 3.125
+
+3<sub>10</sub> = 11<sub>2</sub>
+
+0.125 * 2<sup>4</sup> = 2
+
+2<sub>10</sub> = 10<sub>2</sub>
+
+0011 0010<sub>2</sub> = 3.125<sub>10</sub>
+
+-3.125<sub>10</sub> = 1100 1101<sub>2</sub>
+
+Ogólnie to część całkowitą robimy normalnie, a ułamkowa to ułamek razy 2<sup>liczba_bitów</sup> czyli 0.125 * 2<sup>4</sup>
+
+## Do czego służy stabilizator napięcia?
+- do utrzymywania stałego napięcia wyjściowego
+
+## Jak inaczej nazywamy słownik w algorytmach 
+- Map, Hash Table (do sprawdzenia)
+- Chyba tablica asocjacyjna albo tablica haszująca 
+
+## Python co wypisze print
+```py
+tab =["WB", "xyz", "a", "ABC"]
+tab.sort(key = len) 
+print(tab)
+```
+wynik:
+```bash
+['a', 'WB', 'xyz', 'ABC']
+```
+
+sortuje po długości czyli a ma długość 1, WB 2, xyz i ABC mają 3 więc zostają w takiej kolejności jak były
+
+## Programowanie. zadanie co się wypisze, tam były dwie takie same odpowiedzi (że wypisze się 2), poprawną było „wypisze się 1”!!!
+
+## Programowanie. Były 4 funkcje f1,f2,f3,f4 i odpowiedź to: przy takich samych danych funkcja f1 i f3 wypisza to samo
+
+## Programowanie współbieżne.  Kiedy proces jest wstrzymany? -> jak coś z semaforem
+
+## Python funkcja domknięcia linijki
+
+```py
+1  def outer(x):
+2      def inner(y):
+3          return x + y
+4      return inner
+5
+6  f = outer(10)
+7  print(f(5))  # Wynik: 15
+```
+funkcja domknięcia znajduje się w linijce 2 i 3
+
+## Architektura harvardzka
+Architektura harvardzka to model architektury komputerowej, w którym pamięć przechowująca instrukcje (program) i pamięć przechowująca dane są oddzielone i działają na różnych magistralach. 
+
+## SQL injection 
+technika ataku polegająca na wstrzykiwaniu złośliwych fragmentów kodu SQL do zapytań, które są wykonywane przez aplikację, korzystającą z bazy danych. Atak ten wykorzystuje niedostateczną weryfikację i oczyszczanie danych wejściowych, co umożliwia atakującemu manipulowanie zapytaniami SQL oraz uzyskiwanie nieautoryzowanego dostępu do danych lub ich modyfikację.
+
+## Algorytm KNN
+Algorytm k-NN (k-Nearest Neighbors) to metoda uczenia maszynowego wykorzystywana zarówno do klasyfikacji, jak i regresji. Jego główne cechy to:
+- Nieparametryczność: k-NN nie zakłada żadnego konkretnego modelu ani funkcji rozkładu danych – działa na zasadzie porównywania podobieństwa między punktami.
+- Lazy learning (uczenie leniwe): Algorytm nie buduje modelu podczas fazy treningowej; zamiast tego, zapamiętuje cały zbiór danych treningowych, a obliczenia przeprowadza dopiero przy podejmowaniu decyzji o klasyfikacji lub predykcji.
+
+## dirty read
+Jenda transakcja czyta dane z inne transakcji które jeszcze nie są zcommitowane
+
+## jaki algorytm jest najbardziej sprawiedliwy i tam bylo RR RMS EDF itd.
+RR (Round Robin) – Najbardziej sprawiedliwy
+
+## pamięć wirtualna do czego służy
+Pamięć wirtualna to mechanizm zarządzania pamięcią w systemach operacyjnych, który rozszerza pamięć RAM poprzez wykorzystanie dysku twardego jako dodatkowej przestrzeni na dane. Dzięki temu system może obsługiwać więcej programów, niż fizyczna pamięć RAM pozwala.
+
+## cosnt w c++
+stała lub jeśli przy funkcji w klasie to nie modyfikuje jej zawartości
+
+## oscylator z wymuszeniem i tlumieniem - wzór
+![alt text](image-9.png)
