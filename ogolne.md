@@ -47,6 +47,9 @@ Elementy o równej wartości będą występowały, po posortowaniu, w takiej sam
 - sortowanie introspektywne – (ang. introspective sort lub introsort), \(O(n \log n)\)
 - sortowanie przez kopcowanie – (ang. heapsort), \(O(n \log n)\)
 
+
+![alt text](image-10.png)
+
 ### Kody
 
 #### `Na pewn były kody na sortowanie przez wstawianie i przez wybieranie`
