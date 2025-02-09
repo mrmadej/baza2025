@@ -926,6 +926,7 @@ FIFO chyba
 ## wątki vs procesy
 - Procesy są używane do realizacji niezależnych programów, które mogą działać samodzielnie. Każdy proces ma swoją przestrzeń adresową i zasoby.
 - Wątki są bardziej efektywną jednostką wykonawczą, ponieważ dzielą zasoby procesu, co sprawia, że komunikacja między nimi jest tańsza. Są one wykorzystywane głównie w sytuacjach, gdzie konieczne jest równoczesne wykonywanie wielu zadań w obrębie jednej aplikacji
+- wątki są lżejsze od procesów
 
 **ogólnie proces zawiera wątki a nie na odwrót**
 
