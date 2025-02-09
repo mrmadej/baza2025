@@ -985,7 +985,7 @@ farad
 - Rozpoznawanie scen i rozkład elementów w obrazach
 - Wzmacnianie jakości obrazu
 
-## Co się pisze w Directory (nwm może o sieci chodzi)
+## Co się pisze w Directory (nwm może o sieci chodzi) - raczej serwery 
 chat dał coś takiego:
 - Użytkownicy (np. nazwy użytkowników, hasła, uprawnienia)
 - Grupy (np. grupy użytkowników)
