@@ -941,6 +941,7 @@ np
 ```
 liczby stanowią ilość połączeń między węzłami. Węzły idą od lewej do prawej i od góry do dołu. Czyli np to znaczy że węzeł 2 ma jedno połączenie z węzłem 1
 ## coś o rodzaju szyfrowania, gdzie odpowiedzią było `SHA -256`
+pytanie o funkcje skrótu, czyli o sha256, a pozostałe odp to były rodzaje szyfrowań czyli RSA(asymetryczne) i AES(symetryczne), jedno randomowe CEE
 
 ## f(x)=(a+b)i - iloczyn skalarny (nie wiem o co chodzi w tym pytaniu niby)
 
